@@ -19,6 +19,14 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Pixel Game Colors
+				pixel: {
+					orange: '#FF6B35',
+					blue: '#004E89',
+					purple: '#1A1A2E',
+					yellow: '#FFD23F',
+					gray: '#EAEAEA'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -84,11 +92,24 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pixel-glow': {
+					'0%, 100%': { filter: 'drop-shadow(0 0 4px #FF6B35)' },
+					'50%': { filter: 'drop-shadow(0 0 12px #FF6B35)' }
+				},
+				'pixel-bounce': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-4px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pixel-glow': 'pixel-glow 2s ease-in-out infinite',
+				'pixel-bounce': 'pixel-bounce 1s ease-in-out infinite'
+			},
+			fontFamily: {
+				'pixel': ['monospace']
 			}
 		}
 	},
