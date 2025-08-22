@@ -19,7 +19,20 @@ export default {
 		},
 		extend: {
 			colors: {
-				// Pixel Game Colors
+				// Game Colors
+				game: {
+					primary: '#2563eb',    // Electric blue
+					secondary: '#7c3aed',  // Purple
+					accent: '#f59e0b',     // Golden orange
+					success: '#10b981',    // Emerald green
+					dark: '#0f172a',       // Dark navy
+					light: '#f8fafc',      // Light gray
+					purple: '#8b5cf6',     // Violet
+					orange: '#ea580c',     // Orange
+					cyan: '#06b6d4',       // Cyan
+					pink: '#ec4899'        // Pink
+				},
+				// Pixel Game Colors (keep for backward compatibility)
 				pixel: {
 					orange: '#FF6B35',
 					blue: '#004E89',
